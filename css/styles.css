@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../img/desert.jpg");
+    background-repeat: no-repeat;
+}
+
+div.header-container {
+    position: absolute;
+    top: 45vh;
+    left: 22%;
+    color: #fff;
+}
+
+form {
+    padding: 2%;
+    position: absolute;
+    right: 20%;
+    top: 15%;
+    border-radius: 1.5%;
+    width: 25%;
+    background-color: #fff;
+}
+
+label.labels {
+    margin-bottom: 0px;
+    font-size: 12px;
+}
+
+p.subtitle {
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+div.form-row {
+    margin-bottom: 10px;
+}
+
+h1.header {
+    display: inline;
+}
+
+img.logo {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+section.form-section div {
+    background-color: #fff;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    h1.header {
+        display: none;
+    }
+    div.header-container {
+        display: none;
+    }
+    img.logo {
+        display: none;
+    }
+    body {
+        background-image: none;
+    }
+    form {
+        width: 100%;
+        background-color: #fff;
+        left: 0%;
+    }     
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    h1.header {
+        display: none;
+    }
+
+    div.header-container {
+        display: none;
+    }
+
+    img.logo {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    form {
+        width: 100%;
+        background-color: #fff;
+        left: 0%;
+    }   
+    
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    h1.header {
+        display: none;
+    }
+
+    div.header-container {
+        display: none;
+    }
+
+    img.logo {
+        display: none;
+    }
+
+    body {
+        background-image: none;
+    }
+
+    form {
+        width: 100%;
+        background-color: #fff;
+        left: 0%;
+    }  
+    
+  }
