@@ -1,0 +1,119 @@
+
+body {
+    font-family: montserrat;
+}
+
+.brand {
+    font-weight: bolder;
+    font-size: 40px;
+    padding-top: 5px;
+}
+
+
+.btn {
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 10px;
+}
+
+.iniciar {
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.o {
+    margin: auto 10px;
+    color: #8d9199;
+}
+
+.lupa {
+    font-size: 37px;
+    margin-left: 120px;
+    color: white;
+    margin-right: -150px;
+}
+
+.logos {
+    width: 26px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+
+
+.descripcion {
+    margin-top:87px;
+    background-image: url(../images/descripcion.jpg);
+    background-size: cover;
+    height: 240px;
+    text-align: center;
+    background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+    position: static;
+}
+
+.date {
+    padding-top: 55px;
+}
+
+.nav-item {
+    font-weight: bolder;
+}
+
+.nav-item:hover {
+    color: white;
+}
+
+.section-na {
+    padding: 20px;
+    position: sticky;
+}
+
+.abajo {
+    color: black;
+    margin: auto 20px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+.publicacion {
+    margin-top: 40px;
+    width: 350px;
+    height: 350px;
+    margin-left: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    border-width: thin;
+    transition: transform .2s;
+}
+
+.publicacion:hover {
+    transform: scale(1.1);
+}
+
+.publicaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+}
+
+
+h2 {
+    color:white;
+    font-weight: bolder;
+    font-size: 75px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    background-color: black;
+    width: 100%;
+}
+
+.copy {
+    color: white
+}
