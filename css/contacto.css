@@ -1,0 +1,110 @@
+div.header-container div img {
+  display: none;
+}
+
+div.header-container h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+h1.header {
+  margin-top: 18vh;
+  margin-bottom: 5vh;
+  line-height: 1em;
+}
+
+h2.contact{
+  font-size: 16px;
+}
+
+h2.header-desktop {
+  display: none;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: montserrat;
+}
+
+form {
+  margin-top: 30px;
+  width: 100%;
+}
+
+.brand-logo {
+  width: 200px;
+}
+
+.btn-primary {
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: bolder;
+  margin-left: 10px;
+  background: rgb(2,31,158);
+  background: linear-gradient(90deg, rgba(2,31,158,1) 0%, rgba(0,206,255,1) 100%);
+}
+
+.enviar {
+  font-family:  'montserrat',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  background: rgb(2,31,158);
+  background: linear-gradient(90deg, rgba(2,31,158,1) 0%, rgba(0,206,255,1) 100%);
+  border: 1px solid rgba(0,206,255,0.8);
+  border-radius: 50px;
+  display: block;
+  padding: 8px 15px;
+  margin-top: 5vh;
+  margin-right: 10px;
+  width: 140px;
+}
+
+.iniciar {
+  color: white;
+  font-weight: bolder;
+  text-decoration: none;
+}
+
+.o {
+  margin: auto 0;
+  margin-left: 10px;
+  color: #8d9199;
+}
+
+.lupa {
+  font-size: 30px;
+  margin-top: 5px;
+  margin-left: 120px;
+  color: white;
+  margin-right: -150px;
+}
+
+.logos {
+  width: 26px;
+  margin-left: 10px;
+  margin-top: 12px;
+}
+
+.nav-item {
+  font-weight: bolder;
+}
+
+.nav-item:hover {
+  color: white;
+}
+div.col label {
+  margin-top: 1.3vh;
+}
+
+div.col p {
+  font-size: 0.8em;
+}
+
+@media (min-width: 768px) {
+  form {
+    margin: 20px auto;
+    width: 50%;
+  }
+}
