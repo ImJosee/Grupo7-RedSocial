@@ -3,10 +3,8 @@ body {
     font-family: montserrat;
 }
 
-.brand {
-    font-weight: bolder;
-    font-size: 40px;
-    padding-top: 5px;
+.brand-logo {
+  width: 200px;
 }
 
 
@@ -43,7 +41,7 @@ body {
 
 
 .descripcion {
-    margin-top:87px;
+    margin-top:75px;
     background-image: url(../images/descripcion.jpg);
     background-size: cover;
     height: 240px;
@@ -80,9 +78,10 @@ body {
 
 .publicacion {
     margin-top: 40px;
-    width: 350px;
-    height: 350px;
+    width: 330px;
+    height: 330px;
     margin-left: 20px;
+    margin-right: 20px;
     border-radius: 10px;
     box-sizing: border-box;
     border-width: thin;
@@ -97,8 +96,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  
+
 }
+
 
 h2 {
     color:white;
