@@ -8,25 +8,25 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/faq.css">
 
-    <title>FAQ | My-Works</title>
+    <title>Ayuda | digitalMe</title>
 </head>
 <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html"><h1 class="brand">My-Works</h1></a>
+        <a class="navbar-brand" href="index.php"><h1 class="brand">My-Works</h1></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
 		<div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
 			<div class="navbar-nav">
-			  <a class="nav-item nav-link" href="index.html">Descubrir</a>
-			  <a class="nav-item nav-link" href="index.html">En directo</a>
-			  <a class="nav-item nav-link" href="faqs.html">Ayuda</a>
+			  <a class="nav-item nav-link" href="index.php">Descubrir</a>
+			  <a class="nav-item nav-link" href="index.php">En directo</a>
+			  <a class="nav-item nav-link" href="faqs.php">Ayuda</a>
 			</div>
 			<div class="d-flex flex-row">
-			  <button type="button" class="btn btn-primary"><a class="iniciar" href="login.html">Iniciar sesión con correo</a></button>
+			  <button type="button" class="btn btn-primary"><a class="iniciar" href="login.php">Iniciar sesión con correo</a></button>
 			  <p class="o">o</p>
 			  <a href="www.google.com"><img class="logos" src="images/busqueda.png" alt=""></a>
-			  <a href="www.facebook.com"><img class="logos" src="images/facebook.png" alt=""></a>
+			  <a href="https://www.google.com"><img class="logos" src="images/facebook.png" alt=""></a>
 			  <a class="lupa" href="#"><ion-icon name="www.google.com"></ion-icon></a>
 			</div>
 		</div>
@@ -43,7 +43,7 @@
 		      <ul class="blocks-list">
 		          <li class="blocks-item">
 		            <a href='#' class="blocks-item-link">
-		              <h4 class="blocks-item-title">Quienes somos? </h4>
+		              <h4 class="blocks-item-title">¿Quienes somos? </h4>
 		              <p class="blocks-item-description"></p>
 		            </a>
 		          </li>

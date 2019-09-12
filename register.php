@@ -1,3 +1,8 @@
+<?php
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,14 +27,14 @@
                     </h2>
                 </div>
             </div>
-            <form action="register.php">
+            <form action="register.php" method="post">
                 <div class="header-info">
                     <h2 class="register">Crear una cuenta</h2>
                     <h1 class="header">
                         <strong>My-Works</strong>
                     </h1>
-                    <p>¿Ya tienes una cuenta? <a href="login.html">Iniciar sesión</a></p>
-                    <p>¿Registrando una empresa? <a href="enterprise.html">Haz click aquí</a></p>
+                    <p>¿Ya tienes una cuenta? <a href="login.php">Iniciar sesión</a></p>
+                    <p>¿Registrando una empresa? <a href="enterprise.php">Haz click aquí</a></p>
                 </div>
                 <div class="form-row">
                     <div class="col">

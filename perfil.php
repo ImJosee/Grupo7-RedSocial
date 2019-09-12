@@ -10,7 +10,7 @@
 </head>
 <body>
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="perfil.html">
+    <a class="navbar-brand" href="perfil.php">
       <img class="brand-logo" src="images/dm-logo.svg" alt="">
     </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,12 +18,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo01">
         <div class="navbar-nav">
-          <a class="nav-item nav-link" href="perfil.html">Descubrir</a>
-          <a class="nav-item nav-link" href="perfil.html">En directo</a>
-          <a class="nav-item nav-link" href="faqs.html">Ayuda</a>
+          <a class="nav-item nav-link" href="perfil.php">Descubrir</a>
+          <a class="nav-item nav-link" href="perfil.php">En directo</a>
+          <a class="nav-item nav-link" href="faqs.php">Ayuda</a>
         </div>
         <div class="d-flex flex-row">
-          <button type="button" class="btn btn-primary"><a class="iniciar" href="login.html">Iniciar sesión con correo</a></button>
+          <button type="button" class="btn btn-primary"><a class="iniciar" href="login.php">Iniciar sesión con correo</a></button>
           <p class="o">o</p>
           <a href="www.google.com"><img class="logos" src="images/busqueda.png" alt=""></a>
           <a href="www.facebook.com"><img class="logos" src="images/facebook.png" alt=""></a>
@@ -53,31 +53,31 @@
       <nav class="section-na navbar navbar-expand-lg navbar-light bg-light justify-content-center">
                       <ul class="navbar-nav">
                         <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.html">Información</a>
+                          <a class="abajo linksection" href="perfil.php">Información</a>
                         </li>
                         <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.html">Trabajo<a>
+                          <a class="abajo linksection" href="perfil.php">Trabajo<a>
                         </li>
                         <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.html">Apreciaciones</a>
+                          <a class="abajo linksection" href="perfil.php">Apreciaciones</a>
                         </li>
                       </ul>
                   </nav>
     </section>
       <main>
         <div class="publicaciones container">
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion2.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion1.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion3.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion4.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion5.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion6.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion7.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion8.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion9.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion10.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion11.jpg" alt=""></a></div>
-          <div><a href="perfil.html"><img class="publicacion" src="images/publicacion12.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion2.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion1.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion3.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion4.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion5.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion6.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion7.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion8.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion9.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion10.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion11.jpg" alt=""></a></div>
+          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion12.jpg" alt=""></a></div>
         </div>
       </main>
       <footer>

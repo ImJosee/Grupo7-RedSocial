@@ -26,13 +26,13 @@
           <div class="form-group form-check">
             <input type="checkbox" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
-            <a class="" href="index.html">¿Contraseña olvidada?</a>
+            <a class="" href="index.php">¿Contraseña olvidada?</a>
           </div>
           <button type="submit" class="btn btn-primary">Iniciar sesión</button>
         </form>
-        <h3 class="miembro">¿Todavía no eres miembro? </h3><a class="registrarse" href="register.html">Registrarse</a>
+        <h3 class="miembro">¿Todavía no eres miembro? </h3><a class="registrarse" href="register.php">Registrarse</a>
         <h3 class="empresa">¿Deseas utilizar la cuenta de tu empresa o de tu centro educativo?</h3>
-        <a href="register.html">Iniciar sesión con un Enterprise ID</a>
+        <a href="register.php">Iniciar sesión con un Enterprise ID</a>
         <h3 class="empresa">O inicia sesión con</h3>
         <a class="google" href="www.google.com"><img class="logos" src="images/busqueda.png" alt=""></a>
         <a class="facebook" href="www.facebook.com"><img class="logos" src="images/facebook.png" alt=""></a>
