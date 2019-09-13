@@ -31,54 +31,82 @@
         </div>
       </div>
   </nav>
-    <section>
-      <div class="descripcion">
-        <img src="images/profile-img.jpg" class="profile-image" alt="profile image">
-          <ul class="avatar-info" id="nav">
-            <h3>Nombre Apellido</h3>
-            <li>Job Title</li>
-            <li>Empresa</li>
-            <li> <a href="#">www.digital-me.com</a> </li>
-            <li> <a href="#"><img src="images/location.svg" class="location-icon" alt="location icon">Lugar</a> </li>
+    <section class="general-content">
+      <section class="move_left_desktop">
+        <div class="descripcion">
+          <img src="images/profile-img.jpg" class="profile-image" alt="profile image">
+            <ul class="avatar-info" id="nav">
+              <h3>Nombre Apellido</h3>
+              <li>Job Title</li>
+              <li>Empresa</li>
+              <li> <a href="#">www.digital-me.com</a> </li>
+              <li> <a href="#"><img src="images/location.svg" class="location-icon" alt="location icon">Lugar</a> </li>
+            </ul>
+        </div>
+        <div class="">
+            <ul class="fol-mes-buttons">
+            <button class="seguir" type="submit" name="seguir">Seguir</button>
+            <button class="mensaje"type="submit" name="mensaje">Mensaje</button>
           </ul>
-      </div>
-      <div class="">
-          <ul class="fol-mes-buttons">
-          <button class="seguir" type="seguir" name="seguir">Seguir</button>
-          <button class="mensaje"type="mensaje" name="mensaje">Mensaje</button>
-        </ul>
-      </div>
-    </section>
-    <section>
-      <nav class="section-na navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.php">Información</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.php">Trabajo<a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="abajo linksection" href="perfil.php">Apreciaciones</a>
-                        </li>
-                      </ul>
-                  </nav>
+        </div>
     </section>
       <main>
-        <div class="publicaciones container">
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion2.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion1.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion3.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion4.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion5.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion6.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion7.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion8.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion9.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion10.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion11.jpg" alt=""></a></div>
-          <div><a href="perfil.php"><img class="publicacion" src="images/publicacion12.jpg" alt=""></a></div>
-        </div>
+        <section class="additional-info">
+          <nav class="section-na navbar navbar-expand-lg navbar-light bg-light justify-content-center">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="abajo linksection" href="perfil.php">Información</a>
+                </li>
+                <li class="nav-item">
+                  <a class="abajo linksection" href="perfil.php">Trabajo<a>
+                </li>
+                <li class="nav-item">
+                  <a class="abajo linksection" href="perfil.php">Apreciaciones</a>
+                </li>
+              </ul>
+          </nav>
+        </section>
+        <section class="portfolio_thumbnails">
+          <div class="publicaciones container">
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion2.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion1.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion3.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion4.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion5.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion6.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion7.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion8.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion9.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion10.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion11.jpg" alt=""></a>
+            </div>
+            <div class="col-xs-6 .col-sm-3">
+              <a href="perfil.php"><img class="publicacion" src="images/publicacion12.jpg" alt=""></a>
+            </div>
+          </div>
+        </section>
+      </section>
       </main>
       <footer>
         <div class="copy"> © 2018 Copyright: digitalMe</div>

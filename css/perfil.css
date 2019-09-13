@@ -13,7 +13,6 @@ body {
   font-size: 14px;
   font-weight: bolder;
   margin-left: 10px;
-  background: rgb(2,31,158);
   background: linear-gradient(90deg, rgba(2,31,158,1) 0%, rgba(0,206,255,1) 100%);
 }
 
@@ -44,12 +43,12 @@ body {
 
 div.descripcion ul a {
   text-decoration: none;
-  color: #2b2b2b;
+  color: rgb(2,31,158);
 }
 
 a:hover {
   text-decoration: underline;
-  color: rgba(0,206,255);
+  color: rgb(2,31,158);
 }
 
 .descripcion {
@@ -57,7 +56,7 @@ a:hover {
   background-size: cover;
   height: 240px;
   text-align: center;
-  background-position: center center;
+  background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
   position: static;
@@ -148,27 +147,35 @@ h3 {
   text-decoration: none;
 }
 
+main {
+  width: 100%;
+  margin: 40px 10px 20px 10px;
+
+}
+
 .publicacion {
-  margin-top: 40px;
-  width: 330px;
-  height: 330px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
+  margin-top: 20px;
+  width: 300;
+  height: 35vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 3px;
   box-sizing: border-box;
   border-width: thin;
   transition: transform .2s;
+  object-fit: cover;
 }
 
 .publicacion:hover {
     transform: scale(1.1);
 }
 
-.publicaciones {
+
+div.publicaciones {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  width: 100%;
 }
 
 
@@ -188,3 +195,50 @@ footer {
 .copy {
   color: #fff;
 }
+
+@media (min-width: 1281px) {
+
+
+
+  .profile-image {
+    width: 110px;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 0px;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 8px;
+    text-align: center;
+
+  }
+
+  section.general-content {
+    width: 100%
+  }
+
+
+  section.move_left_desktop {
+    width: 360px;
+    background-color: #fff;
+    position: fixed;
+    top: 15vh;
+    left: 22%;
+    border-radius: 3px;
+    box-shadow: 0 0 5px rgba(0,0,0,.3);
+    z-index: 1;
+    flex-shrink: 0;
+    width: 360px;
+  }
+
+  div.descripcion {
+    margin-top: 5vh;
+  }
+
+  ul nav.avatar-info {
+    color: #2b2b2b;
+  }
+
+  nav.section-na {
+    margin-top: 14vh;
+  }
