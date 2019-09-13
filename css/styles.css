@@ -1,0 +1,36 @@
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    background-color: #2a2c2e;
+    width: 100%;
+}
+
+.footer-li {
+    list-style: none;
+    list-style-type: none;
+}
+
+.footer-a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer-a:hover {
+    color: #f0f0f0;
+    text-decoration: none;
+}
+
+footer.page-footer {
+    margin-top: 30px;
+    background-color: #2a2c2e;
+}
+
+p.footer-text {
+    color: #fff;
+}
+
+h6.footer-h6 {
+    color: #fff;
+}
+
