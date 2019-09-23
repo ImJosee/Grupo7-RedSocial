@@ -68,45 +68,47 @@
         </section>
         <section class="portfolio_thumbnails">
           <div class="publicaciones container">
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion2.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion1.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion3.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion4.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion5.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion6.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion7.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion8.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion9.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion10.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion11.jpg" alt=""></a>
-            </div>
-            <div class="col-xs-6 .col-sm-3">
-              <a href="perfil.php"><img class="publicacion" src="images/publicacion12.jpg" alt=""></a>
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                 <a href="perfil.php"><img src="images/publicacion2.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                 <a href="perfil.php"><img src="images/publicacion1.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion3.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion4.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion5.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion6.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-4 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion7.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion8.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion9.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion10.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion11.jpg" alt=""></a>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
+                <a href="perfil.php"><img src="images/publicacion12.jpg" alt=""></a>
+              </div>
             </div>
           </div>
+
         </section>
-      </section>
       </main>
       <footer>
         <div class="copy"> © 2018 Copyright: digitalMe</div>

@@ -33,10 +33,10 @@
     <div class="publicaciones container">
       <div class="row">
         <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
-          <a href="perfil.php"><img src="images/publicacion2.jpg" alt=""></a>
+           <a href="perfil.php"><img src="images/publicacion2.jpg" alt=""></a>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
-          <a href="perfil.php"><img src="images/publicacion1.jpg" alt=""></a>
+           <a href="perfil.php"><img src="images/publicacion1.jpg" alt=""></a>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-4 publicacion">
           <a href="perfil.php"><img src="images/publicacion3.jpg" alt=""></a>
