@@ -1,4 +1,25 @@
 <?php
+if(!filesize('users.json')) {
+      $users = [
+          'usuarios' => []
+      ];
+      @file_put_contents('users.json', json_encode($users));
+  }
+  if($_POST) {
+      $json = json_decode(file_get_contents('users.json'), true);
+      $id = (count($json['usuarios']) + 1);
+      $usuario = [
+          'id' => $id,
+          'name' => $_POST['name'],
+          'surname' => $_POST['surname'],
+          'email' => $_POST['email'],
+          'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+      ];
+
+
+      $json['usuarios'][] = $usuario;
+      file_put_contents('users.json', json_encode($json));
+  }
 
 ?>
 
@@ -31,7 +52,7 @@
                 <div class="header-info">
                     <h2 class="register">Crear una cuenta</h2>
                     <h1 class="header">
-                        <strong>My-Works</strong>
+                        <strong>DigitalMe</strong>
                     </h1>
                     <p>¿Ya tienes una cuenta? <a href="login.php">Iniciar sesión</a></p>
                     <p>¿Registrando una empresa? <a href="enterprise.php">Haz click aquí</a></p>
@@ -39,17 +60,17 @@
                 <div class="form-row">
                     <div class="col">
                         <label class="labels" for="email">Dirección de correo electrónico</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" name="email" id="email">
                      </div>
-                </div>  
+                </div>
                 <div class="form-row">
                     <div class="col">
                         <label class="labels" for="nombre">Nombre</label>
-                        <input type="text" class="form-control" name="nombre" id="nombre">
+                        <input type="text" class="form-control" name="name" id="nombre">
                      </div>
                     <div class="col">
                         <label class="labels" for="apellido">Apellidos</label>
-                        <input type="text" class="form-control" name="apellido" id="apellido">
+                        <input type="text" class="form-control" name="surname" id="apellido">
                     </div>
                 </div>
                 <div class="form-row">
@@ -86,7 +107,7 @@
                         <label class="labels" for="año">Año</label>
                         <input type="text" class="form-control" name="año" id="año">
                      </div>
-                </div>       
+                </div>
                 <div class="form-row">
                       <div class="col">
                         <label class="labels mr-sm-2" for="inlineFormCustomSelect">País</label>
@@ -102,16 +123,16 @@
                     <div class="col">
                         <p>
                         Haciendo clic en Crear cuenta, estoy de acuerdo en haber leído y aceptado <a href="#terminos&condiciones">la Condiciones de uso y la Política de privacidad</a>.
-                        </p>    
+                        </p>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
-                        <button type="submit" class="registrar btn btn-success">Crear cuenta</button>      
+                        <button type="submit" class="registrar btn btn-success">Crear cuenta</button>
                     </div>
                 </div>
             </form>
-        </main>      
+        </main>
     </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

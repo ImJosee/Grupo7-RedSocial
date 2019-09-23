@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+
+?>
+
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -11,8 +14,8 @@
     <div class="container-fluid">
       <div class="bloque-inicio col-sm-12 col-md-10 col-lg-6 col-xl-4">
         <h2 class="inicia">Inicia  sesíon para continuar</h2>
-        <h1>My-Works</h1>
-        <form>
+        <h1>DigitalMe</h1>
+        <form action="login.php" method="post">
           <div class="form-group row">
             <div class="col-12">
               <input type="email" class="form-control" id="inputPasswor" placeholder="Dirección de correo electronico">
