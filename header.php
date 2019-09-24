@@ -3,9 +3,13 @@
 require 'functions.php';
 
 $button = "Iniciar sesión con correo";
+$myProfile;
+$logout;
 
 if(isset($_SESSION['user']) || isset($_COOKIE['user_login'])) {
   $button = "Crear un proyecto";
+  $myProfile = '<a class="nav-item nav-link" href="perfil.php?id='.$_SESSION['user']['id'].'">Mi Perfil</a>';
+  $logout = '<button type="button" class="btn btn-primary"><a class="iniciar" href="logout.php">Cerrar sesión</a></button>';
 }
 
 ?>
@@ -36,7 +40,8 @@ if(isset($_SESSION['user']) || isset($_COOKIE['user_login'])) {
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="index.php">Descubrir</a>
           <a class="nav-item nav-link" href="faq.php">Ayuda</a>
-          <a class="nav-item nav-link" href="register.php">Registro</a>
+          <?=$myProfile ?? '<a class="nav-item nav-link" href="register.php">Registro</a>'?>
+          <?=$logout ?? ''?>
         </div>
         <div class="d-flex flex-row">
           <button type="button" class="btn btn-primary"><a class="iniciar" href="login.php"><?=$button?></a></button>

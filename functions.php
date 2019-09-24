@@ -62,6 +62,22 @@
         }
     }
 
+    function getUserById($id) {
+        foreach(DB['usuarios'] as $user) {
+            if($id == $user['id']) {
+                return [
+                    'name' => $user['name'],
+                    'email' => $email,
+                    'password' => $user['password'],
+                    'id' => $user['id'],
+                    'surname' => $user['surname'],
+                    'country' => $user['country'],
+                    'birthday' => $user['birthday']
+                ];
+            }
+        }
+    }
+
     function successLogin($email) {
         $usuario = getUsuario($email);
         unset($usuario['password']);

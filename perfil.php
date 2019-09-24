@@ -1,3 +1,24 @@
+<?php
+
+session_start();
+require 'functions.php';
+
+$user;
+$fullname = 'Nombre apellido';
+if($_GET) {
+	if(isset($_GET['id'])) {
+		$user = getUserById($_GET['id']);
+		if(count($user) == 0) {
+			$fullname = 'Nombre apellido';
+		} else {
+			$fullname = $user['name'] . ' ' . $user['surname'];
+		}
+	}
+}
+
+
+?>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,7 +57,7 @@
         <div class="descripcion">
           <img src="images/profile-img.jpg" class="profile-image" alt="profile image">
             <ul class="avatar-info" id="nav">
-              <h3>Nombre Apellido</h3>
+              <h3><?=$fullname?></h3>
               <li>Job Title</li>
               <li>Empresa</li>
               <li> <a href="#">www.digital-me.com</a> </li>
