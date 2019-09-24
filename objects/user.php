@@ -4,12 +4,6 @@ require 'functions.php';
 
 class User {
 
-    private $name;
-    private $email;
-    private $country;
-    private $lang;
-    private $birthday;
-
     function __construct(string $email) {
         $this->$email = $email;
         $data = getUsuario($email);
@@ -17,6 +11,7 @@ class User {
         $this->$country = $data['country'];
         $this->$birthday = $data['birthday'];
         $lang = 'ES';
+        $this->$password = $data['password'];
     }
 
     public function getName() {
@@ -56,7 +51,7 @@ class User {
     }
 
     public function getPasswordHash() {
-        
+        return $this->$password;
     }
 
 }

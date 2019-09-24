@@ -1,4 +1,38 @@
-<?php include('header.php');?>
+<?php
+
+session_start();
+include('header.php');
+
+if($_POST) {
+	$error = [];
+	if(isset($_POST['email']) && isset($_POST['password'])) {
+		if(isAvailable($_POST['email'])) {
+			$error['fail'] = "Correo electrónico o contraseña inválidos.";
+		} else {
+			$user = getUsuario($_POST['email']);
+			if(password_verify($_POST['password'], $user['password'])) {
+				$error['success'] = true;
+			} else {
+				$error['fail'] = "Correo electrónico o contraseña inválidos.";
+			}
+		}
+	} else {
+		$error['fail'] = "Correo electrónico o contraseña inválidos.";
+	}
+
+	if(isset($_POST['remember'])) {
+		if(!isset($_COOKIE['remember'])) {
+			setcookie("remember", $_POST['email'], time() + 3600 * 24);
+		}
+	}
+
+	if(isset($error['success'])) {
+		successLogin($_POST['email']);
+		redirect("index.php");
+	} 
+}
+
+?>
     <div class="container-fluid">
       <div class="bloque-inicio col-sm-12 col-md-10 col-lg-6 col-xl-4">
         <h2 class="inicia">Inicia  sesíon para continuar</h2>
@@ -6,16 +40,17 @@
         <form action="login.php" method="post">
           <div class="form-group row">
             <div class="col-12">
-              <input type="email" class="form-control" id="inputPasswor" placeholder="Dirección de correo electronico">
+              <input type="email" name="email" class="form-control" id="inputPasswor" placeholder="Dirección de correo electronico">
             </div>
           </div>
           <div class="form-group row">
             <div class="col-12">
-              <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
             </div>
           </div>
+		  <p style="color: red;"><?=$error['fail'] ?? ''?></p>
           <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
             <a class="" href="index.php">¿Contraseña olvidada?</a>
           </div>

@@ -1,3 +1,16 @@
+<?php
+
+require 'functions.php';
+
+$button = "Iniciar sesión con correo";
+
+if(isset($_SESSION['user']) || isset($_COOKIE['user_login'])) {
+  $button = "Crear un proyecto";
+}
+
+?>
+
+
 <html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
@@ -26,7 +39,7 @@
           <a class="nav-item nav-link" href="register.php">Registro</a>
         </div>
         <div class="d-flex flex-row">
-          <button type="button" class="btn btn-primary"><a class="iniciar" href="login.php">Iniciar sesión con correo</a></button>
+          <button type="button" class="btn btn-primary"><a class="iniciar" href="login.php"><?=$button?></a></button>
           <p class="o">o</p>
           <a href="#"><img class="logos" src="images/busqueda.png" alt=""></a>
           <a href="#"><img class="logos" src="images/facebook.png" alt=""></a>
