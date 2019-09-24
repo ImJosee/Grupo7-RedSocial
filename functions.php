@@ -1,0 +1,67 @@
+<?php
+    
+    define('DB', json_decode(file_get_contents('users.json'), true));
+
+    function validateRegister() {
+        $errors = [];
+        if(strlen($_POST['email']) == 0) {
+            $errors['email-set'] = 'Debes rellenar tu correo electronico.';
+		} else if(!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+            $errors['email-format'] = 'El formato del email es invalido.';
+        }
+        if(!isset($_POST['name'])) {
+            $errors['name-set'] = 'Debes rellenar el nombre de usuario.';
+        } else if(strlen($_POST['name']) == 0) {
+            $errors['name-set'] = 'Debes rellenar el nombre de usuario.';
+        }
+        if(!isset($_POST['surname'])) {
+            $errors['surname-set'] = 'Debes rellenar tu apellido.';
+        } else if(strlen($_POST['surname']) == 0) {
+            $errors['surname-set'] = 'Debes rellenar tu apellido.';
+        }
+        if(strlen($_POST['password']) == 0) {
+            $errors['pass-set'] = 'Debes rellenar con tu password.';
+        } else if(strlen($_POST['password']) < 8) {
+            $errors['pass-length'] = 'Tu password debe tener 8 caracteres minimo.';
+        }
+        if(!isset($_POST['country'])) {
+            $errors['country'] = 'Selecciona tu pais.';
+        }
+        if(!isset($_POST['day']) || !isset($_POST['month']) || !isset($_POST['year'])) {
+            $errors['birthday'] = 'Completa tu fecha de nacimiento';
+        }
+        return $errors;
+    }
+
+    function isAvailable($email) {
+        foreach(DB['usuarios'] as $user) {
+            if($user['email'] == $email) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function getUsuario($email) {
+        foreach(DB['usuarios'] as $user) {
+            if($email === $user['email']) {
+                return [
+                    'name' => $user['name'],
+                    'email' => $email,
+                    'password' => $user['password'],
+                    'id' => $user['id'],
+                    'surname' => $user['surname'],
+                    'country' => $user['country'],
+                    'birthday' => $user['birthday']
+                ];
+            }
+        }
+    }
+
+    function successLogin($email) {
+        $usuario = getUsuario($email);
+        unset($usuario['password']);
+        $_SESSION['user'] = $usuario;
+    }
+
+?>

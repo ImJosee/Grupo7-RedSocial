@@ -1,24 +1,41 @@
 <?php
+
+require 'functions.php';
+
 if(!filesize('users.json')) {
       $users = [
           'usuarios' => []
       ];
       @file_put_contents('users.json', json_encode($users));
   }
+  $errors = [];
   if($_POST) {
-      $json = json_decode(file_get_contents('users.json'), true);
-      $id = (count($json['usuarios']) + 1);
-      $usuario = [
-          'id' => $id,
-          'name' => $_POST['name'],
-          'surname' => $_POST['surname'],
-          'email' => $_POST['email'],
-          'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
-      ];
-
-
-      $json['usuarios'][] = $usuario;
-      file_put_contents('users.json', json_encode($json));
+      $errors = validateRegister();
+      if(count($errors) == 0) {
+            if(!isAvailable($_POST['email'])) {
+                $errors['email-used'] = 'Ese correo electronico ya esta en uso.';
+            } else {
+            $json = json_decode(file_get_contents('users.json'), true);
+            $id = (count($json['usuarios']) + 1);
+            $date = new DateTime($_POST['year'].'-'.$_POST['month'].'-'.$_POST['day']);
+            $date = $date->format('d-m-Y');
+            $usuario = [
+                'id' => $id,
+                'name' => $_POST['name'],
+                'surname' => $_POST['surname'],
+                'email' => $_POST['email'],
+                'country' => $_POST['country'],
+                'birthday' => $date,
+                'password' => password_hash($_POST['password'], PASSWORD_DEFAULT)
+            ];
+            if($_FILES) {
+                $path = dirname(__FILE__) . "/profile-images/" . $_FILES['avatar']['name'];
+                move_uploaded_file($_FILES['avatar']['tmp_name'], $path);
+            }
+            $json['usuarios'][] = $usuario;
+            file_put_contents('users.json', json_encode($json, JSON_PRETTY_PRINT));
+            }
+      }
   }
 
 ?>
@@ -61,29 +78,44 @@ if(!filesize('users.json')) {
                     <div class="col">
                         <label class="labels" for="email">Dirección de correo electrónico</label>
                         <input type="email" class="form-control" name="email" id="email">
+                        <div class='error email'>
+                            <p style='color: red;'><?=$errors['email-set'] ?? ''?></p>
+                            <p style='color: red;'><?=$errors['email-format'] ?? ''?></p>
+                            <p style='color: red;'><?=$errors['email-used'] ?? ''?></p>
+                        </div>
                      </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <label class="labels" for="nombre">Nombre</label>
                         <input type="text" class="form-control" name="name" id="nombre">
+                        <div class='error name'>
+                            <p style='color: red;'><?=$errors['name-set'] ?? ''?></p>
+                        </div>
                      </div>
                     <div class="col">
                         <label class="labels" for="apellido">Apellidos</label>
                         <input type="text" class="form-control" name="surname" id="apellido">
+                        <div class='error surname'>
+                            <p style='color: red;'><?=$errors['surname-set'] ?? ''?></p>
+                        </div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="col">
                         <label class="labels" for="password">Contraseña</label>
                         <input type="password" class="form-control" name="password" id="password">
+                        <div class='error password'>
+                            <p style='color: red;'><?=$errors['pass-set'] ?? ''?></p>
+                            <p style='color: red;'><?=$errors['pass-length'] ?? ''?></p>
+                        </div>
                      </div>
                 </div>
                 <p class="subtitle">Fecha de nacimiento</p>
                 <div class="form-row">
                     <div class="col">
                         <label class="labels mr-sm-2" for="inlineFormCustomSelect">Mes</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                        <select name="month" class="custom-select" id="inlineFormCustomSelect">
                             <option selected>Elige..</option>
                             <option value="1">Enero</option>
                             <option value="2">Febrero</option>
@@ -101,17 +133,17 @@ if(!filesize('users.json')) {
                      </div>
                      <div class="col">
                         <label class="labels" for="dia">Día</label>
-                        <input type="text" class="form-control" name="dia" id="dia">
+                        <input type="text" class="form-control" name="day" id="dia">
                      </div>
                      <div class="col">
                         <label class="labels" for="año">Año</label>
-                        <input type="text" class="form-control" name="año" id="año">
+                        <input type="text" class="form-control" name="year" id="año">
                      </div>
                 </div>
                 <div class="form-row">
                       <div class="col">
                         <label class="labels mr-sm-2" for="inlineFormCustomSelect">País</label>
-                        <select class="custom-select" id="inlineFormCustomSelect">
+                        <select name="country" class="custom-select" id="inlineFormCustomSelect">
                             <option value="ARG" selected>Argentina</option>
                             <option value="BR">Brasil</option>
                             <option value="CHL">Chile</option>

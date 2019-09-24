@@ -1,1 +1,13 @@
-{"usuarios":[{"id":1,"name":"matias","surname":"ponti","email":"matias_ponti@hotmail.com","password":"$2y$10$N\/NIOb9mQDI4ejAL6DGjROYScowRZkJ55T\/whyqGXGo53gLimNBNy"},{"id":2,"name":"juan","surname":"perez","email":"juan@perez.com","password":"$2y$10$2qs.cGwWMDAB5lAq8ebHyeVFZuC.GI6vD2br5r5fuvfaRUCC2X\/QC"}]}
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "name": "jose",
+            "surname": "belamendia",
+            "email": "josembelamendia@gmail.com",
+            "country": "ARG",
+            "birthday": "26-09-2001",
+            "password": "$2y$10$Ju3hNl1YUjXdNqZeAgO5ZuASDIs5z8.trbhdvXjD4JliMIs0XxbkK"
+        }
+    ]
+}
