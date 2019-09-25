@@ -141,11 +141,13 @@ h3 {
   position: sticky;
 }
 
-.abajo {
-  color: black;
-  margin: auto 20px;
-  font-weight: bolder;
-  text-decoration: none;
+.publicacion img {
+  width: 100%;
+  width: 330px;
+  height: 220px;
+  border-radius: 5px;
+  margin-top: 30px;
+  justify-content:center;
 }
 
 .publicacion {
@@ -178,12 +180,6 @@ h2 {
   font-size: 75px;
 }
 
-footer {
-  text-align: center;
-  margin-top: 30px;
-  background-color: black;
-  width: 100%;
-}
 
 .copy {
   color: #fff;

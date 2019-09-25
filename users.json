@@ -2,66 +2,30 @@
     "usuarios": [
         {
             "id": 1,
-            "name": "jose",
-            "surname": "belamendia",
+            "name": "Jose",
+            "surname": "Belamendia",
             "email": "josembelamendia@gmail.com",
             "country": "ARG",
-            "birthday": "26-09-2001",
-            "password": "$2y$10$Ju3hNl1YUjXdNqZeAgO5ZuASDIs5z8.trbhdvXjD4JliMIs0XxbkK"
+            "birthday": "21-06-2001",
+            "password": "$2y$10$YcZNAo3VJZNRHohEmbosWugf4xC8UxL64o4SDam2aJCrznNEqQ96."
         },
         {
             "id": 2,
-            "name": "Cosme",
-            "surname": "Fulanito",
+            "name": "Prueba",
+            "surname": "1",
             "email": "prueba@gmail.com",
-            "country": "PY",
-            "birthday": "21-10-2002",
-            "password": "$2y$10$.fHaPLVnO5st.ZsYj\/oKK.usdiKXHGvAmzLcR8Gj1gSAkm0rgNXvy"
+            "country": "ARG",
+            "birthday": "01-01-2001",
+            "password": "$2y$10$9UaB\/H4Rm5LGEi3P5fsON.8x4pGDqnPJ1rzQ9tGkJY291lB2RdZyC"
         },
         {
             "id": 3,
-            "name": "Prueba",
-            "surname": "Segunda",
-            "email": "prueba2@gmail.com",
-            "country": "CHL",
-            "birthday": "21-04-2001",
-            "password": "$2y$10$r04lQgGBYZnbfue6FIu1Peyh06YB\/.cTcV.5bn8GXLY\/m40ZF1FHW"
-        },
-        {
-            "id": 4,
-            "name": "Prueba",
-            "surname": "Tercera",
-            "email": "prueba3@gmail.com",
+            "name": "Asd",
+            "surname": "asd",
+            "email": "prueba1@gmail.com",
             "country": "ARG",
-            "birthday": "12-01-1999",
-            "password": "$2y$10$jLzsEQ3VpRiwO.8B3UuUyOVzwdRfuzVtp4BCtWyRXuOV0ksP43.Y2"
-        },
-        {
-            "id": 5,
-            "name": "Prueba",
-            "surname": "Quinta",
-            "email": "prueba5@gmail.com",
-            "country": "ARG",
-            "birthday": "30-01-2001",
-            "password": "$2y$10$\/FJ1XybWnaW9hk3aVLSUieOyGJY7cXvNuGOfo3NUZuEjD4IpNJhKS"
-        },
-        {
-            "id": 6,
-            "name": "Vanesa",
-            "surname": "Mosca",
-            "email": "vanesamosca@gmail.com",
-            "country": "ARG",
-            "birthday": "10-11-1970",
-            "password": "$2y$10$nKCkD.lfEDX.ua9QLYLKiOzpIS7EZU6XxoutNPU6OrO6JhfBeT9b6"
-        },
-        {
-            "id": 7,
-            "name": "Prueba",
-            "surname": "Octava",
-            "email": "prueba8@gmail.com",
-            "country": "CHL",
-            "birthday": "21-04-2002",
-            "password": "$2y$10$KIAR9uxnxY8h97UTrsU4t.zexznvBFVmwcdWJ8lLPKpsyj8DYANW2"
+            "birthday": "21-01-2001",
+            "password": "$2y$10$Mm\/GUJLLGXsraOsBkoS8lOnpFIPJKUhjY3TbMcNwGmwy6IoXkiF7W"
         }
     ]
 }

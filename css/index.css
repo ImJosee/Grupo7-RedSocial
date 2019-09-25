@@ -7,7 +7,6 @@ body {
   width: 200px;
 }
 
-
 .btn {
     border-radius: 50px;
     font-size: 14px;
@@ -76,10 +75,7 @@ body {
     text-decoration: none;
 }
 
-
-
 .publicacion {
-
     box-sizing: border-box;
     transition: transform .2s;
 }

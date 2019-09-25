@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-require 'objects/user.php';
+require 'functions.php';
 
 if(!filesize('users.json')) {
     $users = [

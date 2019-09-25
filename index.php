@@ -1,13 +1,9 @@
 <?php
 
-
+session_start();
+include('header.php');
 
 ?>
-
-
-
-<html lang="en">
-<?php include('header.php');?>
 
 <section>
 <div class="descripcion">

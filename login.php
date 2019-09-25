@@ -1,23 +1,24 @@
 <?php
 
 session_start();
-include('header.php');
+require 'functions.php';
 
 if($_POST) {
 	$error = [];
 	if(isset($_POST['email']) && isset($_POST['password'])) {
 		if(isAvailable($_POST['email'])) {
-			$error['fail'] = "Correo electrónico o contraseña inválidos.";
+      $error['fail'] = "Correo electrónico o contraseña inválidos.";
 		} else {
-			$user = getUsuario($_POST['email']);
+      $user = getUsuario($_POST['email']);
+      echo 'a';
 			if(password_verify($_POST['password'], $user['password'])) {
 				$error['success'] = true;
 			} else {
-				$error['fail'] = "Correo electrónico o contraseña inválidos.";
+        $error['fail'] = "Correo electrónico o contraseña inválidos.";
 			}
 		}
 	} else {
-		$error['fail'] = "Correo electrónico o contraseña inválidos.";
+    $error['fail'] = "Correo electrónico o contraseña inválidos.";
 	}
 
 	if(isset($_POST['remember'])) {
@@ -32,6 +33,8 @@ if($_POST) {
 	} 
 }
 
+
+include('header.php');
 ?>
     <div class="container-fluid">
       <div class="bloque-inicio col-sm-12 col-md-10 col-lg-6 col-xl-4">

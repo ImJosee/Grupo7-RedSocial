@@ -1,12 +1,10 @@
 <?php
 
-require 'functions.php';
-
 $button = "Iniciar sesión con correo";
 $myProfile;
 $logout;
 
-if(isset($_SESSION['user']) || isset($_COOKIE['user_login'])) {
+if(isset($_SESSION['user'])) {
   $button = "Crear un proyecto";
   $myProfile = '<a class="nav-item nav-link" href="perfil.php?id='.$_SESSION['user']['id'].'">Mi Perfil</a>';
   $logout = '<button type="button" class="btn btn-primary"><a class="iniciar" href="logout.php">Cerrar sesión</a></button>';
@@ -26,7 +24,7 @@ if(isset($_SESSION['user']) || isset($_COOKIE['user_login'])) {
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- <link rel="stylesheet" href="css/login.css"> -->
+    <link rel="stylesheet" href="css/login.css"> 
 
     <title>DigitalMe</title>
 </head>
