@@ -35,7 +35,7 @@ if($_POST) {
 
 include('header.php');
 ?>
-    <div class="container-fluid">
+    <div class="container-fluid container-login">
       <div class="bloque-inicio col-sm-12 col-md-10 col-lg-6 col-xl-4">
         <h2 class="inicia h2Login">Inicia  sesíon para continuar</h2>
         <h1 class="h1Login">DigitalMe</h1>
