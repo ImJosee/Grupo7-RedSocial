@@ -26,6 +26,24 @@
             "country": "ARG",
             "birthday": "21-01-2001",
             "password": "$2y$10$Mm\/GUJLLGXsraOsBkoS8lOnpFIPJKUhjY3TbMcNwGmwy6IoXkiF7W"
+        },
+        {
+            "id": 4,
+            "name": "Prueba",
+            "surname": "Quinta",
+            "email": "prueba5@gmail.com",
+            "country": "ARG",
+            "birthday": "12-01-2011",
+            "password": "$2y$10$PLCzcuKq2BiNWTQgO9GDD.Kz3yAVNrJcFiNuaUB2JCaUZxwrYb4jG"
+        },
+        {
+            "id": 5,
+            "name": "Jose Belamendia",
+            "surname": "Belamendia",
+            "email": "macabelamendia@gmail.com",
+            "country": "PY",
+            "birthday": "21-04-2001",
+            "password": "$2y$10$sesZIErhWLHkcqOKTdekNeaOsq2uCU3wuK62PHT5.8wGEgJzixdOG"
         }
     ]
 }

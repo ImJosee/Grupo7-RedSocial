@@ -67,7 +67,7 @@
             if($id == $user['id']) {
                 return [
                     'name' => $user['name'],
-                    'email' => $email,
+                    'email' => $user['email'],
                     'password' => $user['password'],
                     'id' => $user['id'],
                     'surname' => $user['surname'],
@@ -100,7 +100,7 @@
         return $data;
     }
 
-    function isLoged($user) {
+    function isLogged($user) {
 
     }
 

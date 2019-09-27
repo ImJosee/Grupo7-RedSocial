@@ -124,6 +124,7 @@ ul.fol-mes-buttons {
   display: block;
   padding: 8px 15px;
   width: 140px;
+  margin-right: 10px;
 }
 
 .h3-perfil {
@@ -158,27 +159,15 @@ ul.fol-mes-buttons {
 }
 
 .publicacion-perfil {
-  margin-top: 40px;
-  width: 330px;
-  height: 330px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 10px;
-  box-sizing: border-box;
-  border-width: thin;
-  transition: transform .2s;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .publicacion-perfil:hover {
     transform: scale(1.1);
 }
 
-.publicaciones-perfil {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-}
 
 .footer {
     text-align: center;

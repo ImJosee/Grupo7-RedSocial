@@ -5,13 +5,19 @@ require 'functions.php';
 
 $user;
 $fullname = 'Nombre apellido';
+$edit;
 if($_GET) {
 	if(isset($_GET['id'])) {
 		$user = getUserById($_GET['id']);
 		if(count($user) == 0) {
 			$fullname = 'Nombre apellido';
 		} else {
-			$fullname = $user['name'] . ' ' . $user['surname'];
+      $fullname = $user['name'] . ' ' . $user['surname'];
+      if(isset($_SESSION['user'])) {
+        if($_SESSION['user']['email'] == $user['email']) {
+          $edit = '<button class="seguir"type="submit" name="edit-profile">Editar perfil</button>';
+        }
+      }
 		}
 	}
 }
@@ -34,6 +40,7 @@ include('header.php');
             <ul class="fol-mes-buttons">
             <button class="seguir" type="submit" name="seguir">Seguir</button>
             <button class="mensaje"type="submit" name="mensaje">Mensaje</button>
+            <?=$edit ?? ''?>
           </ul>
         </div>
     </section>
@@ -74,7 +81,7 @@ include('header.php');
               <div class="col-sm-12 col-md-6 col-lg-4 publicacion-perfil">
                 <a href="perfil.php"><img src="images/publicacion6.jpg" alt=""></a>
               </div>
-              <div class="col-sm-12 col-md-4 col-lg-4 publicacion-perfil">
+              <div class="col-sm-12 col-md-6 col-lg-4 publicacion-perfil">
                 <a href="perfil.php"><img src="images/publicacion7.jpg" alt=""></a>
               </div>
               <div class="col-sm-12 col-md-6 col-lg-4 publicacion-perfil">

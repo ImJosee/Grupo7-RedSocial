@@ -51,6 +51,8 @@ body {
     position: static;
 }
 
+
+
 .date {
     padding-top: 55px;
 }
@@ -97,7 +99,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
 }
 
 h2 {

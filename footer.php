@@ -10,25 +10,25 @@
       </div>
       <hr class="w-100 clearfix d-md-none">
       <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-        <h6 class="footer-h6 text-uppercase mb-4 font-weight-bold">Lorem</h6>
+        <h6 class="footer-h6 text-uppercase mb-4 font-weight-bold">Soporte</h6>
         <p class="footer-text">
-          <a href="#!">Ipsum</a>
+          <a href="#!">Contacto</a>
         </p>
         <p class="footer-text">
-          <a href="#!">AAA</a>
+          <a href="#!">A</a>
         </p>
         <p class="footer-text">
-          <a href="#!">bbb</a>
+          <a href="#!">B</a>
         </p>
         <p class="footer-text">
-          <a href="#!">ccc</a>
+          <a href="#!">C</a>
         </p>
       </div>
       <hr class="w-100 clearfix d-md-none">
       <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
         <h6 class="footer-h6  text-uppercase mb-4 font-weight-bold">Links</h6>
         <p class="footer-text">
-          <a href="#!">Tu perfil</a>
+          <a href="perfil.php">Tu perfil</a>
         </p>
         <p class="footer-text">
           <a href="#!">Descubrir</a>
