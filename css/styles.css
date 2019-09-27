@@ -1,3 +1,49 @@
+.bloque-inicio {
+  margin: auto;
+  font-family: Montserrat;
+}
+
+.inicia {
+ margin-top: 20px;
+ font-size: 12px;
+ margin-bottom: 0px;
+}
+
+.btn-login {
+    border-radius: 100px;
+    padding: 8px 23px;
+    font-size: 15px;
+    margin-top: 30px;
+  }
+
+.form-check-label {
+   font-size: 12px;
+}
+
+.miembro {
+  margin-top: 30px;
+    font-size: 20px;
+}
+
+.empresa {
+  margin-top: 20px;
+    font-size: 20px;
+}
+
+.logos-login {
+  width: 40px;
+  margin-left: 20px;
+}
+
+.h2Login {
+  font-size: 15px;
+}
+
+.h1Login {
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
 .footer {
     text-align: center;
     margin-top: 30px;
@@ -33,4 +79,3 @@ p.footer-text {
 h6.footer-h6 {
     color: #fff;
 }
-
