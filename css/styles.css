@@ -53,6 +53,133 @@ a:hover{
     color: #e0e0e0;
 }
 
+
+div.descripcion-perfil ul a {
+  text-decoration: none;
+  color: #2b2b2b;
+}
+
+.descripcion-perfil {
+  margin-top:95px;
+  background-size: cover;
+  height: 240px;
+  text-align: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: static;
+}
+
+.profile-image {
+  width: 110px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 auto;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 8px;
+  text-align: center;
+}
+
+.avatar-info {
+  list-style: none;
+  text-align: center;
+  margin-left: -30px;
+}
+
+ul.fol-mes-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: 50px;
+}
+
+.seguir {
+  font-family:  'montserrat',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: capitalize;
+  background: rgb(2,31,158);
+  background: linear-gradient(90deg, rgba(2,31,158,1) 0%, rgba(0,206,255,1) 100%);
+  border: 1px solid rgba(0,206,255,0.8);
+  border-radius: 50px;
+  display: block;
+  padding: 8px 15px;
+  margin-right: 10px;
+  width: 140px;
+}
+
+.mensaje {
+  font-family: 'montserrat',sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  background-color: #fff;
+  border: 1px solid #A09E9E;
+  color: #2b2b2b;
+  border-radius: 50px;
+  display: block;
+  padding: 8px 15px;
+  width: 140px;
+}
+
+.h3-perfil {
+  text-align: center;
+}
+
+.location-icon {
+  height: 13px;
+  fill: #0057ff;
+}
+
+.navItemPerfil {
+  font-weight: bolder;
+}
+
+.navItemPerfil:hover {
+  color: white;
+}
+
+.section-na-perfil {
+  padding: 20px;
+  position: sticky;
+}
+
+.publicacion-perfil img {
+  width: 100%;
+  width: 330px;
+  height: 220px;
+  border-radius: 5px;
+  margin-top: 30px;
+  justify-content:center;
+}
+
+.publicacion-perfil {
+  margin-top: 40px;
+  width: 330px;
+  height: 330px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  border-width: thin;
+  transition: transform .2s;
+}
+
+.publicacion-perfil:hover {
+    transform: scale(1.1);
+}
+
+.publicaciones-perfil {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
 .footer {
     text-align: center;
     margin-top: 30px;
