@@ -1,3 +1,5 @@
+/**** ACA EMPIEZA EL CSS DEL LOGIN ****/
+
 .bloque-inicio {
   margin: auto;
   font-family: Montserrat;
@@ -53,6 +55,7 @@ a:hover{
     color: #e0e0e0;
 }
 
+/**** ACA EMPIEZA EL CSS DEL PERFIL ****/
 
 div.descripcion-perfil ul a {
   text-decoration: none;
@@ -168,6 +171,36 @@ ul.fol-mes-buttons {
     transform: scale(1.1);
 }
 
+/**** ACA EMPIEZA EL CSS DEL REGISTRO ****/
+
+.register-form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+div.div-reg-container {
+  background-image: url(../images/desert.jpg);
+}
+
+div.header-container div img {
+  display: none;
+}
+
+div.header-container h1 {
+ text-align: center;
+ margin: 10px auto;
+}
+
+@media (min-width: 1281px) {
+  .register-form {
+    width: 40%;
+  }
+}
+
+/**** ACA EMPIEZA EL CSS DEL FOOTER GENERAL ****/
 
 .footer {
     text-align: center;

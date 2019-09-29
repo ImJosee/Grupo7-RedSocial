@@ -44,6 +44,78 @@
             "country": "PY",
             "birthday": "21-04-2001",
             "password": "$2y$10$sesZIErhWLHkcqOKTdekNeaOsq2uCU3wuK62PHT5.8wGEgJzixdOG"
+        },
+        {
+            "id": 6,
+            "name": "asd",
+            "surname": "asd",
+            "email": "asd@asd.asd",
+            "country": "CHL",
+            "birthday": "12-03-1221",
+            "password": "$2y$10$m.Q8nk14KfkBvU\/Spwa\/yuTg1I3yEivjFbNx8RP0Uy27LRYnI7iRC"
+        },
+        {
+            "id": 7,
+            "name": "asd",
+            "surname": "asd",
+            "email": "aaa@asd.asd",
+            "country": "CHL",
+            "birthday": "12-03-1221",
+            "password": "$2y$10$Ok7NzDS5BicHJCNjkJw1zOuros1a0ga5DeXiWuu9GtLzoiofaOrjS"
+        },
+        {
+            "id": 8,
+            "name": "asdasdasd",
+            "surname": "asdasd",
+            "email": "aaaa@asd.asd",
+            "country": "CHL",
+            "birthday": "12-03-1221",
+            "password": "$2y$10$i750e\/WX3MtbgKmx6xIdLOLTQVd3GbTwUsL2cKZ1s0ryKDuAVLRyC"
+        },
+        {
+            "id": 9,
+            "name": "a",
+            "surname": "a",
+            "email": "b@b.b",
+            "country": "ARG",
+            "birthday": "21-01-1222",
+            "password": "$2y$10$x2of.wh5guuEKTrK.s\/dvOdON4dNzb7Aut2pcQS.kg1ivCZHBIok2"
+        },
+        {
+            "id": 10,
+            "name": "asd",
+            "surname": "asd",
+            "email": "c@gmail.com",
+            "country": "AZ",
+            "birthday": "21-01-2001",
+            "password": "$2y$10$f8xNJIWU9szMO\/MpvUyfle\/oNnK.HF37KgmZ1CD12We6eBNpgu71G"
+        },
+        {
+            "id": 11,
+            "name": "d",
+            "surname": "d",
+            "email": "d@d.d",
+            "country": "AF",
+            "birthday": "21-01-2001",
+            "password": "$2y$10$6aK3epMQZU6uYBYfFQ2ZROHluxqq7rFdrjhGCVl6eyVCD221GDYyW"
+        },
+        {
+            "id": 12,
+            "name": "e",
+            "surname": "e",
+            "email": "e@e.e",
+            "country": "AF",
+            "birthday": "21-01-2001",
+            "password": "$2y$10$cJHAIgpiebU6xDTCoslVvurdxdQ5PKpLgZKUNp4nZbveacAZXBLva"
+        },
+        {
+            "id": 13,
+            "name": "f",
+            "surname": "f",
+            "email": "f@f.f",
+            "country": "AF",
+            "birthday": "01-01-1221",
+            "password": "$2y$10$RM.DpS7N5P2PsN\/NgTR2UujdtqAVcG8aTtbcSmHE4rPlcXrj4WKQG"
         }
     ]
 }

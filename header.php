@@ -24,8 +24,6 @@ if(isset($_SESSION['user'])) {
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/faq.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/login.css"> 
-
     <title>DigitalMe</title>
 </head>
 <body>

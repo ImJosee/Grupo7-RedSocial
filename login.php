@@ -4,33 +4,18 @@ session_start();
 require 'functions.php';
 
 if($_POST) {
-	$error = [];
-	if(isset($_POST['email']) && isset($_POST['password'])) {
-		if(isAvailable($_POST['email'])) {
-      $error['fail'] = "Correo electrónico o contraseña inválidos.";
-		} else {
-      $user = getUsuario($_POST['email']);
-      echo 'a';
-			if(password_verify($_POST['password'], $user['password'])) {
-				$error['success'] = true;
-			} else {
-        $error['fail'] = "Correo electrónico o contraseña inválidos.";
-			}
-		}
-	} else {
-    $error['fail'] = "Correo electrónico o contraseña inválidos.";
-	}
-
-	if(isset($_POST['remember'])) {
-		if(!isset($_COOKIE['remember'])) {
-			setcookie("remember", $_POST['email'], time() + 3600 * 24);
-		}
-	}
-
-	if(isset($error['success'])) {
-		successLogin($_POST['email']);
-		redirect("index.php");
-	} 
+  $validator = new Validator();
+  $user = getUsuario($_POST['email']);
+  
+  if($validator->isLoginSuccess($_POST, $user)) {
+    if(isset($_POST['remember'])) {
+      setcookie("remember", $_POST['email'], time() + 3600 * 24);
+    }
+    successLogin($_POST['email']);
+		redirect("index.php"); 
+  } else {
+    $error = '* Correo electrónico o contraseña inválidos.';
+  }
 }
 
 include('header.php');
@@ -42,7 +27,7 @@ include('header.php');
         <form action="login.php" method="post">
           <div class="form-group row">
             <div class="col-12">
-              <input type="email" name="email" class="form-control" id="inputPasswor" placeholder="Dirección de correo electronico">
+              <input type="email" name="email" class="form-control" id="inputPasswor" placeholder="Dirección de correo electronico" value="<?=$_POST['email'] ?? ''?>">
             </div>
           </div>
           <div class="form-group row">
@@ -50,7 +35,7 @@ include('header.php');
               <input type="password" name="password" class="form-control" id="inputPassword" placeholder="Password">
             </div>
           </div>
-		  <p style="color: red;"><?=$error['fail'] ?? ''?></p>
+		  <p style="color: red;"><?=$error ?? ''?></p>
           <div class="form-group form-check">
             <input type="checkbox" name="remember" class="form-check-input" id="exampleCheck1">
             <label class="form-check-label" for="exampleCheck1">Mantener sesión iniciada</label>
